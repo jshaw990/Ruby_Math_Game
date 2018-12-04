@@ -27,6 +27,7 @@ def question
     print ">"
     quest_ans = $stdin.gets.chomp.to_i
     if @cor_ans == quest_ans
+        @wrong = false
         puts "Correct!"
         puts "----------"
         sleep(1)
